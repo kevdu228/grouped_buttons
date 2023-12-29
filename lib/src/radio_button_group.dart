@@ -51,7 +51,7 @@ class RadioButtonGroup extends StatefulWidget {
   final EdgeInsetsGeometry margin;
 
   RadioButtonGroup({
-    Key key,
+    Key? key,
     @required this.labels,
     this.picked,
     this.disabled,
