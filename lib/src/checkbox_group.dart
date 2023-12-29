@@ -60,7 +60,7 @@ class CheckboxGroup extends StatefulWidget {
   final EdgeInsetsGeometry margin;
 
   CheckboxGroup({
-    Key key,
+    
     @required this.labels,
     this.checked,
     this.disabled,
@@ -74,7 +74,7 @@ class CheckboxGroup extends StatefulWidget {
     this.itemBuilder,
     this.padding = const EdgeInsets.all(0.0),
     this.margin = const EdgeInsets.all(0.0),
-  }) : super(key: key);
+  });
 
 
   @override
