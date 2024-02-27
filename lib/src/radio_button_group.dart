@@ -11,7 +11,7 @@ import 'grouped_buttons_orientation.dart';
 
 class RadioButtonGroup extends StatefulWidget {
   /// A list of strings that describes each Radio button. Each label must be distinct.
-  final List<String> labels;
+  List<String> labels = [];
 
   /// Specifies which Radio button to automatically pick.
   /// Every element must match a label.
