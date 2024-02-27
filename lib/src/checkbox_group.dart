@@ -61,7 +61,7 @@ class CheckboxGroup extends StatefulWidget {
 
   CheckboxGroup({
     
-    @required this.labels,
+    this.labels,
     this.checked,
     this.disabled,
     this.onChange,
