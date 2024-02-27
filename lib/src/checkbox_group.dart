@@ -11,7 +11,7 @@ import 'grouped_buttons_orientation.dart';
 
 class CheckboxGroup extends StatefulWidget {
   /// A list of strings that describes each Checkbox. Each label must be distinct.
-  List<String> labels=[];
+  List<String> labels = [];
 
   /// Specifies which boxes to be automatically check.
   /// Every element must match a label.
