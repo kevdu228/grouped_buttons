@@ -52,13 +52,13 @@ class RadioButtonGroup extends StatefulWidget {
 
   RadioButtonGroup({
     
-    required this.labels,
-    required this.picked,
-    required this.disabled,
-    required this.onChange,
+    this.labels = [],
+    this.picked = '',
+    this.disabled = [],
+    this.onChange ,
     required this.onSelected,
     required this.labelStyle = const TextStyle(),
-    required this.activeColor, //defaults to toggleableActiveColor,
+    required this.activeColor = Colors.white, //defaults to toggleableActiveColor,
     required this.orientation = GroupedButtonsOrientation.VERTICAL,
     required this.itemBuilder,
     required this.padding = const EdgeInsets.all(0.0),
