@@ -52,7 +52,7 @@ class RadioButtonGroup extends StatefulWidget {
 
   RadioButtonGroup({
     
-    @required this.labels,
+    this.labels,
     this.picked,
     this.disabled,
     this.onChange,
