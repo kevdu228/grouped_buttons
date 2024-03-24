@@ -11,44 +11,44 @@ import 'grouped_buttons_orientation.dart';
 
 class RadioButtonGroup extends StatefulWidget {
   /// A list of strings that describes each Radio button. Each label must be distinct.
-  List<String> labels = [];
+  late List<String> labels ;
 
   /// Specifies which Radio button to automatically pick.
   /// Every element must match a label.
   /// This is useful for clearing what is picked (set it to "").
   /// If this is non-null, then the user must handle updating this; otherwise, the state of the RadioButtonGroup won't change.
-  final String picked;
+  late String picked;
 
   /// Specifies which buttons should be disabled.
   /// If this is non-null, no buttons will be disabled.
   /// The strings passed to this must match the labels.
-  final List<String> disabled;
+  late List<String> disabled;
 
   /// Called when the value of the RadioButtonGroup changes.
-  final void Function(String label, int index) onChange;
+  late void Function(String label, int index) onChange;
 
   /// Called when the user makes a selection.
-  final void Function(String selected) onSelected;
+  late void Function(String selected) onSelected;
 
   /// The style to use for the labels.
-  final TextStyle labelStyle;
+  late TextStyle labelStyle;
 
   /// Specifies the orientation to display elements.
-  final GroupedButtonsOrientation orientation;
+  late GroupedButtonsOrientation orientation;
 
   /// Called when needed to build a RadioButtonGroup element.
-  final Widget Function(Radio radioButton, Text label, int index) itemBuilder;
+  late Widget Function(Radio radioButton, Text label, int index) itemBuilder;
 
   //RADIO BUTTON FIELDS
   /// The color to use when a Radio button is checked.
-  final Color activeColor;
+  late Color activeColor;
 
   //SPACING STUFF
   /// Empty space in which to inset the RadioButtonGroup.
-  final EdgeInsetsGeometry padding;
+  late EdgeInsetsGeometry padding;
 
   /// Empty space surrounding the RadioButtonGroup.
-  final EdgeInsetsGeometry margin;
+  late EdgeInsetsGeometry margin;
 
   RadioButtonGroup({
     
@@ -70,7 +70,7 @@ class RadioButtonGroup extends StatefulWidget {
 }
 
 class _RadioButtonGroupState extends State<RadioButtonGroup> {
-  String _selected;
+  late String _selected;
 
   @override
   void initState(){
